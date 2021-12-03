@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*--------------------------------------------------------Firstly the top bar------------------------------------------------ */
+nav a {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+.header-container {
+  width: 80%;
+  max-width: 1440 px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*In order for the logo to be in the left and the nav on the right*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+
+.img-logo-container {
+width:15%;
+justify-content: space-between;
+}
+
+nav {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+/*------------Fix the top bar-----------------*/
+
+header{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 1000000000000;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------Intro-----------------------------------------*/
+.intro-container {
+  max-width: 1440 px;
+  width: 80%;
+  margin: 0 auto; /*To center the container on the screen, margin auto */
+  padding-top: 150px;
+  display: flex;
+
+}
+
+img {
+  width: 100%;
+}
+
+.intro-text {
+  width: 70%;
+}
+
+.intro-img {
+  width: 35%;
+  padding-top: 200px;
+}
+
+h1, h2, p, .image-title, .image-text{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 500;
+ }
+
+.intro-p {
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 104px;
+}
+
+mark{
+  background-color: #D74E90;
+  color: white;
+}
+span{
+  color:#D74E90;
+}
+
+/*------------------------------------------------------ Projects---------------------------------------------------------------------*/
+
+.proj-title{
+  border-bottom: 8px solid#D74E90;
+  width: 220px; 
+}
+
+.proj-container{
+  max-width: 1440 px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2{
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.proj-buttons button {
+  border: 1px solid#D74E90;
+  width: 200px;
+  height: 48px;
+  border-radius: 5px;
+
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  margin-top: 36px;
+
+  transition-duration: 0.4s;
+}
+
+.proj-buttons button:hover {
+  background-color: #D74E90;
+  color: white;
+}
+
+.proj-buttons {
+  max-width: 165px;
+  display: flex;
+  gap:30px;
+  padding-bottom: 20px;
+}
+
+
+/*-------------For the slide in overlay of the hover, I need;---------------*/
+.proj-container-2 {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+
+.image-and-overlay {
+  position: relative;
+  width: calc(50% - 16px);
+  min-width: 40%;
+}
+
+.image-img {
+  display: block;
+  height:560px;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 100%; /*This height determins how much of the overlay covers the original img */
+  transition: .2s ease;
+}
+
+.image-and-overlay:hover .image-overlay {
+  width: 70%;
+}
+
+.image-title {
+  font-size: 30px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  white-space: nowrap;
+}
+.image-text {
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  white-space: nowrap;
+}
+
+/*------------------------------------------------------ About me ---------------------------------------------------------------------*/
+
+.padding-top-catg {
+  padding-top: 64px;
+}
+.me-title{
+  border-bottom: 8px solid#D74E90;
+  width: 290px;
+}
+
+.me-img-text {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.me-img {
+  width: 40%;
+}
+
+.me-text {
+  padding-top: 80px;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.me-text p {
+  padding-top: 50px;
+  
+}
+
+.responsive-not-working { /*I do thi in order to display error if it is open in a another device rather than laptop*/
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  display: none;
+}
+
+.back-responsive {
+  display: flex;
+  width: 80%;
+  margin:0 auto;
+  display: none;
+}
+
+/*--------------------------------------------------- Contact me ------------------------------------------------------------------*/
+
+footer {
+  background-color:#D74E90 ;
+  position: relative;
+}
+
+.contact-title{
+  text-align: center;
+  padding-top: 80px;
+}
+
+.margin-top-catg {
+  margin-top: 120px;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer p {
+  font-size: 30px;
+  color: white;
+}
+
+.logos-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px
+}
+
+
+.smiley-box img {
+  width: 200px;
+  position: absolute;
+  top: 430px;
+  left: 1000px;
+
+}
+
+.handr-box img {
+  width: 900px;
+  position: absolute;
+  top: 320px;
+  left: 0px;
+
+}
+
+.logos-box img {
+  width: 50px;
+  padding-top: 40px;
+
+}
+
+.footer-size {
+  height: 700px;
+}
+
+/*----------------------Now, lets try doing the responsive-----------------*/
+
+@media (max-width:1024px){
+  head, body header,footer, .intro-container, .proj-container {
+    display: none;
+  }
+/*height not working*/
+  .responsive-not-working {
+    display:block;
+/*Not working dont know why
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (max-height:768px) and (orientation: landscape) {
+  head, body header,footer, .intro-container, .proj-container {
+    display: none;
+  }
+  .responsive-not-working {
+    display: blocks;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+}
+
+
+}
